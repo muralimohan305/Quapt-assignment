@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="card" *ngFor="let item of resorts; let listCatIdx = index">
+    <img alt="" [src]="item?.image_path" />
+    <div class="card-div">
+      <p class="resort-title">
+        <span class="host-title" *ngIf="item?.host_type">{{
+          item?.host_type
+        }}</span>
+        <span> {{ item?.title | slice : 0 : 20 }}</span>
+        <span class="ion-float-right" *ngIf="item?.avg_rating">
+          <ion-icon slot="end" name="star"></ion-icon> {{ item?.avg_rating }}
+        </span>
+      </p>
+      <p
+        *ngIf="item?.resort_type && item?.bed_count"
+        class="resort-dt ion-no-margin"
+      >
+        {{ item?.resort_type }} <span>{{ item?.bed_count }}</span>
+      </p>
+      <p *ngIf="item?.description" class="resort-dt ion-no-margin">
+        {{ item?.description }}
+      </p>
+      <p
+        *ngIf="item?.price && item?.timing"
+        class="resort-price ion-no-margin-top ion-margin-bottom"
+      >
+        {{ item?.price | currency : "EUR" : "symbol" : "2.0" }}/
+        {{ item?.timing }}
+      </p>
+      <ion-label *ngIf="item?.rare_find" class="resort-type">
+        <ion-icon name="diamond-outline"></ion-icon> {{ item?.rare_find }}
+      </ion-label>
+    </div>
+  </div>
+</div>

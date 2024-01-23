@@ -1,0 +1,70 @@
+.row::-webkit-scrollbar {
+  display: none;
+}
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  .card {
+    flex: 0 0 auto;
+    width: 225px;
+    margin: 24px 8px;
+    border-radius: 8px;
+    font-size: 14px;
+    .card-div {
+      margin: 10px 0;
+    }
+
+    img {
+      height: 150px;
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .resort-title {
+      color: gray;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 4px;
+      opacity: 0.8;
+
+      ion-icon {
+        color: #ec4b62;
+      }
+    }
+
+    .resort-dt {
+      font-size: 1.2em;
+      line-height: 22px;
+      white-space: nowrap !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+    }
+    .host-title {
+      border: 2px solid black;
+      padding: 3px 4px;
+      border-radius: 5px;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: black;
+    }
+    .resort-type {
+      border-radius: 20px;
+      padding: 4px 8px;
+      background: rgba(0, 0, 0, 0.1);
+      font-size: 1.2em;
+      margin: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 110px;
+      font-weight: 500;
+    }
+    .resort-price {
+      font-size: 1.2em;
+      color: #000000;
+      margin: 0 0 8px 0;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+[{
+    "title":"kuta utara",
+    "image_path":"assets/icon/resort1.png",
+    "avg_rating":4.6,
+    "resort_type":"Entire villa",
+    "quantity":"",
+    "description":"The beach is an easy five minute walk away. ",
+    "price":200,
+    "timing":"night",
+    "host_type":"",
+    "rare_find":"Rare find",
+    "bed_count":"3 beds"
+  },{
+    "title":"kuta utara",
+    "image_path":"assets/icon/resort2.png",
+    "avg_rating":4,
+    "resort_type":"Entire villa",
+    "quantity":"3 beds",
+    "description":"The beach is an easy five minute walk away.",
+    "price":200,
+    "timing":"night",
+    "host_type":"superhost",
+    "rare_find":"",
+    "bed_count":"3 beds"
+  },
+  {
+    "title":"kuta utara",
+    "image_path":"assets/icon/resort3.png",
+    "avg_rating":4.9,
+    "resort_type":"Entire villa",
+    "quantity":"3 beds",
+    "description":"The beach is an easy five minute walk away.",
+    "price":200,
+    "timing":"full day",
+    "host_type":"superhost",
+    "rare_find":"Rare find",
+    "bed_count":"3 beds"
+  }
+  ]

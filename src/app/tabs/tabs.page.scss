@@ -1,0 +1,13 @@
+#container {
+  width: 100%;
+  height: 400px;
+}
+
+capacitor-google-map {
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+}
+::ng-deep.tabs-inner{
+    display: none;
+}
